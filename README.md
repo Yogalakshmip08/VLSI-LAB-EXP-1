@@ -38,14 +38,29 @@ Full Subtractor:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
 
 
-
+# FULL ADDER
 VERILOG CODE:
+```
 
-----Type Verilog Code
-
+module fa_ha(a,b,c,sum,cout);
+input a,b,c;
+output sum,cout;
+wire wl, w2, w3, w4, w5;
+xor x1(w1,a,b);
+xor x2 (sum,w1,c) ;
+and al(w2,a,b) ;
+and a2(w3,b,c);
+and a3(w4,a,c) ;
+or o1(w5,w2,w3) ;
+or o2(cout,w5,w4) ;
+endmodule
+```
 OUTPUT:
+![FULL ADDER](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/1675522b-95e1-41db-ba3b-3fe94dd47aa2)
+![Screenshot 2024-04-01 144130](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/8ab6f046-fb3f-41df-8531-4277c6a30ad4)
 
------Place a Waveform Generated from Xilinx ISE
+
+
 
 RESULT:
 

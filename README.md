@@ -1,7 +1,7 @@
 # VLSI-LAB-EXPERIMENTS
-AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
+AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Vivado 2023.
 
-APPARATUS REQUIRED: Xilinx 14.7 Spartan6 FPGA
+APPARATUS REQUIRED: Vivado 2023 Spartan6 FPGA
 
 PROCEDURE: STEP:1 Start the Xilinx navigator, Select and Name the New project. STEP:2 Select the device family, device, package and speed. STEP:3 Select new source in the New Project and select Verilog Module as the Source type. STEP:4 Type the File Name and Click Next and then finish button. Type the code and save it. STEP:5 Select the Behavioral Simulation in the Source Window and click the check syntax. STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table. STEP:7 Select the Implementation in the Sources Window and select the required file in the Processes Window. STEP:8 Select Check Syntax from the Synthesize XST Process. Double Click in the Floorplan Area/IO/Logic-Post Synthesis process in the User Constraints process group. UCF(User constraint File) is obtained. STEP:9 In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu. STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here. STEP:12 Load the Bit file into the SPARTAN 6 FPGA STEP:11 On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
@@ -167,6 +167,40 @@ OUTPUT:
 # RIPPLECARRY ADDER_8BIT
 VERILOG CODE:
 ```
+module ripplemod(a, b, cin, sum, cout);
+input [07:0] a;
+input [07:0] b;
+input cin;
+output [7:0]sum;
+output cout;
+wire[6:0] c;
+fulladd a1(a[0],b[0],cin,sum[0],c[0]);
+fulladd a2(a[1],b[1],c[0],sum[1],c[1]);
+fulladd a3(a[2],b[2],c[1],sum[2],c[2]);
+fulladd a4(a[3],b[3],c[2],sum[3],c[3]);
+fulladd a5(a[4],b[4],c[3],sum[4],c[4]);
+fulladd a6(a[5],b[5],c[4],sum[5],c[5]);
+fulladd a7(a[6],b[6],c[5],sum[6],c[6]);
+fulladd a8(a[7],b[7],c[6],sum[7],cout);
+endmodule
+module fulladd(a, b, cin, sum, cout);
+input a;
+input b;
+input cin;
+output sum;
+output cout;
+assign sum=(a^b^cin);
+assign cout=((a&b)|(b&cin)|(a&cin));
+endmodule
+```
+OUTPUT:
+![RIPPLE CARRY ADDER 8BIT](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/15a3b54e-aed6-478b-bf43-0b4634b202ab)
+![WhatsApp Image 2024-04-22 at 13 47 09_3cfa8bdd](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/829840ee-4ddd-4202-bf0e-9aedb94ce7bd)
+
+RESULT:
+The simulation and synthesis of Logic Gates,Adders and Subractor using Vivado Software are succesfully verified.
+
+
 
 
 

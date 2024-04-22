@@ -223,5 +223,3 @@ The simulation and synthesis of Logic Gates,Adders and Subractor using Vivado So
 
 
 
-RESULT:
-

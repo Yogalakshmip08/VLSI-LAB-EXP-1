@@ -134,9 +134,43 @@ OUTPUT:
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/93a8d647-d1d3-47e9-9bcc-b249b1465dc7)
 
 
-#RIPPLECARRY ADDER_4BIT
+# RIPPLECARRY ADDER_4BIT
 VERILOG CODE:
 ```
+module rippe_adder(S, Cout, X, Y,Cin);
+ input [3:0] X, Y;
+ input Cin;
+ output [3:0] S;
+ output Cout;
+ wire w1, w2, w3;
+ fulladder u1(S[0], w1,X[0], Y[0], Cin);
+ fulladder u2(S[1], w2,X[1], Y[1], w1);
+ fulladder u3(S[2], w3,X[2], Y[2], w2);
+ fulladder u4(S[3], Cout,X[3], Y[3], w3);
+endmodule
+module fulladder(S, Co, X, Y, Ci);
+  input X, Y, Ci;
+  output S, Co;
+  wire w1,w2,w3;
+  xor G1(w1, X, Y);
+  xor G2(S, w1, Ci);
+  and G3(w2, w1, Ci);
+  and G4(w3, X, Y);
+  or G5(Co, w2, w3);
+endmodule
+```
+OUTPUT:
+![WhatsApp Image 2024-04-22 at 13 47 16_9de91174](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/9c68d9b8-6ead-4a44-ade0-68baae9b9a39)
+![WhatsApp Image 2024-04-22 at 13 47 10_531e25a3](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/8e88e252-7953-47a0-a49d-f27324ced72e)
+
+
+# RIPPLECARRY ADDER_8BIT
+VERILOG CODE:
+```
+
+
+
+
 
 
 

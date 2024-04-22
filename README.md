@@ -85,6 +85,27 @@ OUTPUT:
 VERILOG CODE:
 ```
 
+module half_adder(a,b,sum,carry);
+input a,b;
+output sum,carry; 
+or(sum,a,b);
+and(carry,a,b);
+endmodule
+```
+OUTPUT:
+![FULL ADDER](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/5e84d015-766b-4b6d-843e-36d676ff36fe)
+![WhatsApp Image 2024-04-22 at 13 47 07_c2fb3815](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/e96d2502-df13-410e-83e8-4ebc8507fc5a)
+
+
+# HALF SUBRACTOR
+VERILOG CODE:
+```
+
+
+
+
+
+
 
 
 

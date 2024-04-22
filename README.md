@@ -60,6 +60,12 @@ OUTPUT:
 ![Screenshot 2024-04-01 144130](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/8ab6f046-fb3f-41df-8531-4277c6a30ad4)
 
 
+# FULL SUBRACTOR
+VERILOG CODE:
+```
+
+
+
 
 
 RESULT:

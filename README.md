@@ -117,6 +117,28 @@ OUTPUT:
 # LOGIC GATES
 VERILOG CODE:
 ```
+module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
+input a,b;
+output andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate;
+and(andgate,a,b);
+or(orgate,a,b);
+xor(xorgate,a,b);
+nand(nandgate,a,b);  
+nor(norgate,a,b);
+xnor(xnorgate,a,b);
+not(notgate,a);
+endmodule
+```
+OUTPUT:
+![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/273cfdb8-2378-42bd-aa09-e6d8b039ae3a)
+![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/93a8d647-d1d3-47e9-9bcc-b249b1465dc7)
+
+
+#RIPPLECARRY ADDER_4BIT
+VERILOG CODE:
+```
+
+
 
 
 

@@ -100,6 +100,24 @@ OUTPUT:
 # HALF SUBRACTOR
 VERILOG CODE:
 ```
+module halfsubtractor( D,Bo,A,B);
+input A,B;
+output D,Bo;
+wire w1;
+xor (D,A,B);
+not (w1,B);
+and (Bo,B,w1);
+endmodule
+```
+OUTPUT:
+![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/181982a6-7dbb-4002-b71b-9426bd9e195f)
+![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/244ae7f8-c171-48de-89d9-72b69c87b8d7)
+
+
+# LOGIC GATES
+VERILOG CODE:
+```
+
 
 
 

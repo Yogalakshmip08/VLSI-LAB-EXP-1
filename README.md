@@ -26,6 +26,7 @@ Logic Diagram :
 # Logic Gates:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
 
+**Program**:
 module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 
 input a,b;
@@ -57,6 +58,8 @@ endmodule
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/0e1ecb96-0c25-4556-832b-aeeedfdfe7b9)
 
+**Program**:
+
 module half_adder(a,b,sum,carry);
 
 input a,b;
@@ -79,6 +82,8 @@ endmodule
 # Full adder:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/9bb3964c-438f-469d-a3de-c1cca6f323fb)
+
+**Program**:
 
 module fulladder(a,b,c,sum,carry);
 
@@ -109,6 +114,8 @@ endmodule
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/731470b7-eb4e-49f8-8bb7-2994052a7184)
 
+**Program**:
+
 module halfsub(a,b,diff,borrow);
 
 input a,b;
@@ -129,6 +136,8 @@ endmodule
 # Full Subtractor:
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/d66f874b-c1f2-44b3-a035-7149b56430c1)
+
+**Program**:
 
 module fs(a,b,bin,d,bout);
 
@@ -158,6 +167,8 @@ endmodule
 # 8 Bit Ripple Carry Adder
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
+
+**Program**:
 
 module fulladder(a,b,c,sum,carry);
 

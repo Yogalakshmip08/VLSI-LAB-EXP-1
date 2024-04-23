@@ -48,6 +48,8 @@ not(notgate,a);
 
 endmodule
 
+**OUTPUT WAVEFORM:**:
+
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/48ba7e88-9e1a-475b-8f9b-6e89d31894a7)
 
 
@@ -66,6 +68,8 @@ xor g1(sum,a,b);
 and g2(carry,a,b);
 
 endmodule
+
+**OUTPUT WAVEFORM:**:
 
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/e9a7f5cc-414e-4ed4-b3c0-f5dfd70f550c)
 
@@ -96,6 +100,8 @@ or(carry,w2,w3);
 
 endmodule
 
+**OUTPUT WAVEFORM:**:
+
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/9a2c376b-023e-4b76-bf0a-707467e196ad)
 
 
@@ -114,6 +120,8 @@ xor(diff,a,b);
 and(borrow,~a,b);
 
 endmodule
+
+**OUTPUT WAVEFORM:**
 
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/f4ffcffd-90d2-4682-897c-d9ae787a4afd)
 
@@ -141,6 +149,8 @@ and(w3,~w1,bin);
 or(bout,w3,w2);
 
 endmodule
+
+**OUTPUT WAVEFORM:**
 
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/e0b6c2be-0961-4488-9522-2b6fbf807d47)
 
@@ -199,6 +209,7 @@ fulladder f8(a[7], b[7], w[7], s[7], cout);
 
 endmodule
 
+**OUTPUT WAVEFORM:**
 ![image](https://github.com/Yogalakshmip08/VLSI-LAB-EXP-1/assets/161303457/b694213e-9611-4c82-9476-30be9b87c760)
 
 
